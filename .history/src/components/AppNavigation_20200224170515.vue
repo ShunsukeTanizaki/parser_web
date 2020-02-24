@@ -46,8 +46,7 @@
       <!-- <v-spacer></v-spacer> -->
       <v-toolbar-items>
       <v-spacer></v-spacer>
-      <!-- ホーム -->
-      <v-btn text to="/" class="hidden-sm-and-down">Home</v-btn>
+
       <!-- ### about ボタン ### -->
       <v-btn text to="/about" class="hidden-sm-and-down">About</v-btn>
 
@@ -112,7 +111,7 @@
         <v-btn v-on="on" text to="/contact" class="hidden-sm-and-down">お問合わせ<v-icon>mdi-menu-down</v-icon></v-btn>
         </template>
         <v-list>
-          <v-subheader>Contact</v-subheader>
+          <v-subheader>CONTACT</v-subheader>
           <v-list-item v-for="contact_support in contact_supports" :key="contact_support.name" :to="contact_support.link">
             <v-list-item-icon>
               <v-icon>{{ contact_support.icon }}</v-icon>
@@ -137,44 +136,33 @@ export default {
       drawer: false,
       supports:[
         {
-          name: 'お手入れ方法',
+          name: 'お手入れの方法',
           icon: '',
           link:'/care'
         },
         {
           name: '修理について',
-          icon: 'mdi-auto-fix',
+          icon: '',
           link:'/care/repair'}
       ],
       care_supports:[
         {
           name: 'お手入れの方法',
-          icon: 'mdi-auto-fix',
+          icon: '',
           link:'/care'
         },
         {
           name: '修理について',
-          icon: 'mdi-content-cut',
+          icon: '',
           link:'/care/repair'}
       ],
       contact_supports:[
-        {
-          name: 'お支払い・送料について',
-          icon: 'mdi-package-variant-closed',
-          link:'/payment-shipping'
-        },
-        {
-          name: '返品・交換について',
-          icon: 'mdi-clipboard-arrow-left',
-          link: '/preturns-exchanges'
-        },
         {
           name: 'お問合わせ',
           icon: 'mdi-email',
           link:'/contact'
         },
       ],
-      // ハンバーガーメニュー
       nav_lists:[
         {
           name: 'HOME',
@@ -189,54 +177,38 @@ export default {
         {
           name: 'Order',
           icon: '',
-          link: '/order'
-        },
-        {
-          name: 'コレクション',
-          icon: 'mdi-function',
-          link: '/collection'
-        },
-        {
-        name: 'お手入れ方法',
-        icon: 'mdi-auto-fix',
-        lists: [
-            {
-              name: 'お手入れ方法',
-              icon: 'mdi-auto-fix',
-              link:'/care'
-            },
-            {
-              name: '修理について',
-              icon: 'mdi-content-cut',
-              link:'/care/repair'
-            }
+          lists:[
+            {name: 'Colors'},
+            {name: 'Content'},
+            {name: 'Display'}
           ]
+        },
+        {
+          name: 'Collection',
+          icon: 'mdi-view-dashboard',
+          lists:[
+            {name: 'API explorer'},
+            {name: 'Alerts'}
+          ]
+        },
+        {
+          name: 'Directives',
+          icon: 'mdi-function'
         },
         {
           name: 'お問合わせ',
           icon: 'mdi-email',
           lists:[
-            
             {
-              name: 'お支払い・送料について',
-              icon: 'mdi-package-variant-closed',
-              link:'/payment-shipping'
-            },
-            {
-              name: '返品・交換について',
-              icon: 'mdi-clipboard-arrow-left',
-              link: '/preturns-exchanges'
+              name: 'お問合わせ',
+              icon: 'mdi-email',
+              link:'/contact'
             },
             // {
             //   name: '会社概要',
             //   icon: 'mdi-office-building',
             //   link:'/CompanyProfile'
-            // },
-            {
-              name: 'お問合わせ',
-              icon: 'mdi-email',
-              link:'/contact'
-            }
+            // }
           ]
         }
       ]

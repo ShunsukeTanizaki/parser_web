@@ -193,8 +193,7 @@ export default {
         },
         {
           name: 'コレクション',
-          icon: 'mdi-function',
-          link: '/collection'
+          icon: 'mdi-function'
         },
         {
         name: 'お手入れ方法',

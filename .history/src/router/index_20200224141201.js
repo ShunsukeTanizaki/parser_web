@@ -28,6 +28,7 @@ const routes = [
     name: 'Collection',
     component: () => import('../views/Collection.vue')
   },
+
   {
     path: '/care',
     name: 'Care',
@@ -37,16 +38,6 @@ const routes = [
     path: '/care/repair',
     name: 'Repair',
     component: () => import('../views/Repair.vue')
-  },
-  {
-    path: '/payment-shipping',
-    name: 'PaymentShipping',
-    component: () => import('../views/PaymentShipping.vue')
-  },
-  {
-    path: '/preturns-exchanges',
-    name: 'ReturnsExchanges',
-    component: () => import('../views/ReturnsExchanges.vue')
   },
   {
     path: '/contact',
@@ -59,16 +50,7 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes,
-  scrollBehavior (to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition
-    } else {
-      return { x: 0, y: 0 }
-    }
-  }
+  routes
 })
-
-
 
 export default router

@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="about_top">
     <v-content>
-      <h1>aa</h1>z
+      <h1>aa</h1>
     </v-content>
   </v-container>
 </template>

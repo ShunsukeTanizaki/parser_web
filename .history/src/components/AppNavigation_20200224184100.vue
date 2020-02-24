@@ -192,9 +192,16 @@ export default {
           link: '/order'
         },
         {
-          name: 'コレクション',
-          icon: 'mdi-function',
-          link: '/collection'
+          name: 'Collection',
+          icon: 'mdi-view-dashboard',
+          lists:[
+            {name: 'API explorer'},
+            {name: 'Alerts'}
+          ]
+        },
+        {
+          name: 'Directives',
+          icon: 'mdi-function'
         },
         {
         name: 'お手入れ方法',

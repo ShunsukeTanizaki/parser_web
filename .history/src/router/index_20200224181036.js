@@ -44,11 +44,6 @@ const routes = [
     component: () => import('../views/PaymentShipping.vue')
   },
   {
-    path: '/preturns-exchanges',
-    name: 'ReturnsExchanges',
-    component: () => import('../views/ReturnsExchanges.vue')
-  },
-  {
     path: '/contact',
     name: 'Contact',
     component: () => import('../views/Contact.vue')

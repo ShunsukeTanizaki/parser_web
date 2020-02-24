@@ -27,4 +27,7 @@ export default {
 </script>
 
 <style scoped>
+.about_top {
+  width:300px;
+}
 </style>

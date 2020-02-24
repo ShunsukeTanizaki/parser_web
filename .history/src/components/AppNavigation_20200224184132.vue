@@ -192,9 +192,8 @@ export default {
           link: '/order'
         },
         {
-          name: 'コレクション',
-          icon: 'mdi-function',
-          link: '/collection'
+          name: 'Directives',
+          icon: 'mdi-function'
         },
         {
         name: 'お手入れ方法',

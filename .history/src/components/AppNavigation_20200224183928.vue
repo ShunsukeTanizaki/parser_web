@@ -189,12 +189,23 @@ export default {
         {
           name: 'Order',
           icon: '',
-          link: '/order'
+          lists:[
+            {name: 'Colors'},
+            {name: 'Content'},
+            {name: 'Display'}
+          ]
         },
         {
-          name: 'コレクション',
-          icon: 'mdi-function',
-          link: '/collection'
+          name: 'Collection',
+          icon: 'mdi-view-dashboard',
+          lists:[
+            {name: 'API explorer'},
+            {name: 'Alerts'}
+          ]
+        },
+        {
+          name: 'Directives',
+          icon: 'mdi-function'
         },
         {
         name: 'お手入れ方法',

@@ -137,13 +137,13 @@ export default {
       drawer: false,
       supports:[
         {
-          name: 'お手入れ方法',
+          name: 'お手入れの方法',
           icon: '',
           link:'/care'
         },
         {
           name: '修理について',
-          icon: 'mdi-auto-fix',
+          icon: '',
           link:'/care/repair'}
       ],
       care_supports:[
@@ -189,19 +189,30 @@ export default {
         {
           name: 'Order',
           icon: '',
-          link: '/order'
+          lists:[
+            {name: 'Colors'},
+            {name: 'Content'},
+            {name: 'Display'}
+          ]
         },
         {
-          name: 'コレクション',
-          icon: 'mdi-function',
-          link: '/collection'
+          name: 'Collection',
+          icon: 'mdi-view-dashboard',
+          lists:[
+            {name: 'API explorer'},
+            {name: 'Alerts'}
+          ]
         },
         {
-        name: 'お手入れ方法',
-        icon: 'mdi-auto-fix',
+          name: 'Directives',
+          icon: 'mdi-function'
+        },
+        {
+        name: 'care',
+        icon: 'mdi-content-cut',
         lists: [
             {
-              name: 'お手入れ方法',
+              name: 'お手入れの方法',
               icon: 'mdi-auto-fix',
               link:'/care'
             },
