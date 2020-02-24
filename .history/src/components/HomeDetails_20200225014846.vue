@@ -1,0 +1,32 @@
+<template>
+  <v-container fluid class="">
+    <section>
+      <v-layout
+        column
+        wrap
+        class="my-4"
+        align-center
+      >
+        <v-flex xs12 sm4 class="my-6">
+          <div class="text-center">
+            <h2 class="headline mb-6"></h2>
+            <span class="subheading">
+            「グラウンドで気持ちよくプレーできる相棒」をコンセプトに<br>
+            <br>
+            職人の手仕事にこだわったモノづくりを目指しております。
+            </span>
+          </div>
+        </v-flex>
+      </v-layout>
+    </section>
+  </v-container>
+</template>
+
+<script>
+export default {
+  name: "HomeDetails"
+};
+</script>
+
+<style scoped>
+</style>
