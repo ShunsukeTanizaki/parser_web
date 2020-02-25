@@ -1,5 +1,5 @@
 <template>
-  <section class="grey darken-3">
+  <section class="contactas">
     <v-layout
       column
       wrap
@@ -7,10 +7,12 @@
       align-center
     >
       <v-flex xs12 sm4>
-        <div v-cloak>
-          <section v-bind:style="{height:fullheight}">
-            <h2 class="font-italic white--text pt-12">Coming soon...</h2>
-          </section>
+        <div div id="mail_form" v-cloak>
+          <h2 class="headline mb-6">お問合わせはメールにてご連絡ください</h2>
+          <span class="subheading">
+            <a href="mailto:info@parser.jp"><v-icon>mdi-email</v-icon>  info@parser.jp</a><br>
+          </span>
+          <span>※2営業日日以内に返信のない場合はお手数ですが再度ご連絡をお願いいたします。</span>
         </div>
       </v-flex>
     </v-layout>
@@ -19,11 +21,12 @@
 
 <script>
 export default {
-  name: "CollectionGallery",
+  name: "ContactUs",
+  el: 'mail_form',
   data() {
     return {
       //画面の高さを定義
-      fullheight: window.innerHeight- 230 + 'px',
+      fullheight: window.innerHeight+'px',
       message: '',
       methods: {
         resize: function() {
@@ -37,8 +40,15 @@ export default {
       }
     }
   }
-};
+}
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+  font-size: 1.2em;
+}
+.contactas {
+  height: 100％;
+}
 </style>

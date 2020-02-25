@@ -3,11 +3,11 @@
     <v-container grid-list-xl class="">
       <v-layout row wrap justify-center class="my-6 mx-md-12">
 
-        <v-simple-table height="310px">
+        <v-simple-table height="300px">
           <template v-slot:default>
             <thead>
               <tr>
-                <th class="text-left headline">修理価格表</th>
+                <th class="text-left headline mb-2">修理価格表</th>
                 <th></th>
               </tr>
             </thead>

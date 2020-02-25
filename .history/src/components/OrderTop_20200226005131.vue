@@ -8,7 +8,7 @@
     >
       <v-flex xs12 sm4>
         <div v-cloak>
-          <section v-bind:style="{height:fullheight}">
+          <section v-bind:style="{height:fullheight}" style="">
             <h2 class="font-italic white--text pt-12">Coming soon...</h2>
           </section>
         </div>
@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: "CollectionGallery",
+  name: "OrderTop",
   data() {
     return {
       //画面の高さを定義

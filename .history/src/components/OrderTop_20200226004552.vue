@@ -1,5 +1,5 @@
 <template>
-  <section class="grey darken-3">
+  <section class="contactas">
     <v-layout
       column
       wrap
@@ -8,8 +8,13 @@
     >
       <v-flex xs12 sm4>
         <div v-cloak>
-          <section v-bind:style="{height:fullheight}">
-            <h2 class="font-italic white--text pt-12">Coming soon...</h2>
+          <section v-bind:style="{height:fullheight}" style="">
+            <h2 class="headline mb-10"><p class="font-italic mt-12">
+              Coming soon... 
+            </p></h2>
+          <span class="subheading mb-10">
+          </span>
+          <span>※2営業日日以内に返信のない場合はお手数ですが再度ご連絡をお願いいたします。</span>
           </section>
         </div>
       </v-flex>
@@ -19,7 +24,7 @@
 
 <script>
 export default {
-  name: "CollectionGallery",
+  name: "OrderTop",
   data() {
     return {
       //画面の高さを定義

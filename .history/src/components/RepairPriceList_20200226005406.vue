@@ -3,7 +3,7 @@
     <v-container grid-list-xl class="">
       <v-layout row wrap justify-center class="my-6 mx-md-12">
 
-        <v-simple-table height="310px">
+        <v-simple-table height="320px">
           <template v-slot:default>
             <thead>
               <tr>
