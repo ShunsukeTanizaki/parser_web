@@ -17,13 +17,17 @@
             v-for="nav_list in nav_lists"
             :key="nav_list.name"
             :prepend-icon="nav_list.icon"
+            :to="nav_list.link"
             no-action
-            :append-icon="nav_list.lists ? undefined : ''"> 
-            <template v-slot:activator>
+            :append-icon="nav_list.lists ? undefined : ''"
+            color="brack"
+          >
+            <template v-slot:activator :to="nav_list.link">
               <v-list-item-content>
                 <v-list-item-title>{{ nav_list.name }}</v-list-item-title>
               </v-list-item-content>
             </template>
+            
             <v-list-item 
               v-for="list in nav_list.lists" 
               :key="list.name" 
@@ -134,7 +138,8 @@
 export default {
   data(){
     return{
-      appTitle: 'PARSER',
+      // appTitle: 'PARSER',
+      appTitle: '',
       drawer: false,
       // ヘッダーナビ
       supports:[
@@ -181,7 +186,7 @@ export default {
         {
           name: 'HOME',
           icon: 'mdi-home',
-          link: 'https://parser.jp'
+          link: '/'
         },
         {
           name: 'About',
@@ -199,7 +204,7 @@ export default {
           link: '/collection'
         },
         {
-        name: 'お手入れ方法',
+        name: 'お手入れ',
         icon: 'mdi-auto-fix',
         lists: [
             {

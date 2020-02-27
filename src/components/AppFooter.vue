@@ -11,13 +11,14 @@
       wrap
     >
       <v-btn
-        class="hidden-sm-and-down overline"
-        v-for="link in links"
-        :key="link"
+        class="hidden-sm-and-down"
+        v-for="support in supports"
+        :key="support.name"
+        :to="support.link"
         text
-        
+        tile
       >
-        {{ link }}
+        {{ support.name }}
       </v-btn>
       <v-flex
         text-center
@@ -29,33 +30,38 @@
       </v-flex>
     </v-layout>
   </v-footer>
-<!-- 
-<template>
-  <v-footer
-    padless
-  >
-    <v-col
-      class="text-center"
-      cols="12"
-    >
-      <div class="copyrught grey--text text--darken-2 ">
-        &copy;{{ copyRightYear }}<strong>{{ appTitle }}</strong>
-      </div>
-    </v-col>
-  </v-footer> -->
+
 </template>
 
 <script>
 export default {
   data: () => ({
     appTitle: 'PARSER',
-    links: [
-      'Home',
-      'About Us',
-      'Team',
-      'Services',
-      'Blog',
-      'Contact Us'
+    supports: [
+      {
+        name: 'Home',
+        link:'/'
+      },
+      {
+        name: 'About',
+        link:'/about'
+      },
+      {
+        name: 'Order',
+        link:'/order'
+      },
+      {
+        name: 'Collection',
+        link:'/collection'
+      },
+      {
+        name: 'Care',
+        link:'/care'
+      },
+      {
+        name: 'Contact',
+        link:'/contact'
+      },
     ]
   }),
   computed: {
