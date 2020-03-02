@@ -20,7 +20,7 @@
                       </v-card-title>
                       <v-card-text>
                         昔から靴やスーツを仕立てることをbespoke（ビスポーク）と呼びますが、<br class="hidden-sm-and-up">
-                        これはお客様お一人お一人とお話し<br class="hidden-sm-and-up">（be spoke）をしながら仕立てていくことに由来しています。<br>
+                        これはお客様お一人お一人と対話<br class="hidden-sm-and-up">（be spoke）しながら仕立てていくことに由来しています。<br>
                         私達もお客様と理想にあった形を作り上げていく過程を大切にしていきます。
                       </v-card-text>
                     </v-img>

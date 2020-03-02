@@ -1,11 +1,11 @@
 <template>
   <section >
     <v-container grid-list-xl class="">
-      <h2 class="text-center headline pb-2">価格</h2>
+      <h2 class="text-center headline pb-2">価格（税抜）</h2>
       <v-layout row wrap justify-center class="my-6 mx-md-12">
         
-        <v-simple-table height="350px">
-          <template v-slot:default>
+        <v-simple-table height="100%">
+          <template>
             <thead>
               <tr>
                 <th></th>
@@ -14,10 +14,40 @@
               </tr>
             </thead>
             <tbody>
-              <tr v-for="item in price" :key="item.name">
-                <td class="title">{{ item.name }}</td>
-                <td class="body-1">{{ item.price1 }}</td>
-                <td class="body-1">{{ item.price2 }}</td>
+              <tr>
+                <td class="subtitle-1">グラブ</td>
+                <td>50,000-</td>
+                <td>35,000-</td>
+              </tr>
+              <tr>
+                <td class="subtitle-1">ミット</td>
+                <td>52,000-</td>
+                <td>37,000-</td>
+              </tr>
+              <tr class="grey darken-3">
+                <td class="title white--text">オプション</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="subtitle-1">刺繍</td>
+                <td>一ヵ所</td>
+                <td>1,000〜</td>
+              </tr>
+              <tr>
+                <td class="subtitle-1">刺繍ロゴ</td>
+                <td></td>
+                <td>別途お見積もり</td>
+              </tr>
+              <tr>
+                <td class="subtitle-1">複数カラー</td>
+                <td>3色以上</td>
+                <td>1,500〜</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
             </tbody>
           </template>
@@ -76,6 +106,6 @@ export default {
 
 <style scoped>
 th, tr, td {
-  padding: 10px 30px 10px 30px ;
+  padding: 10px 20px 10px 20px ;
 }
 </style>

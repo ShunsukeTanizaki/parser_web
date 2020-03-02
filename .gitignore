@@ -3,6 +3,7 @@ node_modules
 /dist
 /tests
 .history
+OrderPrice2.vue
 
 # local env files
 .env.local
