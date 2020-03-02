@@ -19,7 +19,7 @@
               <span class="subheading grey--text text--darken-3">
                 ※現在オンラインでのご注文は受け付けておりません。<br>
                 ビスポークのアポイントについては、
-                <a class=" grey--text text--darken-2" href="/contact">こちらに</a><br class="hidden-sm-and-up">
+                <a class=" grey--text text--darken-2" href="/returns-exchanges">こちらに</a><br class="hidden-sm-and-up">
                 お問い合わせください。<br>
               <br>
             </span>

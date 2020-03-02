@@ -173,7 +173,7 @@ export default {
         {
           name: '返品・交換について',
           icon: 'mdi-clipboard-arrow-left',
-          link: '/preturns-exchanges'
+          link: '/returns-exchanges'
         },
         {
           name: 'お問合わせ',
@@ -232,7 +232,7 @@ export default {
             {
               name: '返品・交換について',
               icon: 'mdi-clipboard-arrow-left',
-              link: '/preturns-exchanges'
+              link: '/returns-exchanges'
             },
             // {
             //   name: '会社概要',
