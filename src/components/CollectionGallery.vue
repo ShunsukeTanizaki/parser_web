@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: "CollectionGallery",
+  name: "OrderTop",
   data() {
     return {
       //画面の高さを定義

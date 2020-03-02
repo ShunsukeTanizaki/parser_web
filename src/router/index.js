@@ -34,7 +34,7 @@ const routes = [
     component: () => import('../views/Care.vue')
   },
   {
-    path: '/care/repair',
+    path: '/repair',
     name: 'Repair',
     component: () => import('../views/Repair.vue')
   },

@@ -16,8 +16,9 @@
             <span class="pl-4">担当：谷﨑</span><br>
             <br>
           </span>
-          <span>※2営業日以内に返信のない場合はお手数ですが<br class="hidden-sm-and-up">
-          再度ご連絡をお願いいたします。</span>
+          <span>※通常3営業日以内に<br class="hidden-sm-and-up">
+          回答メールを送らせて頂いております
+          </span>
           </section>
         </div>
       </v-flex>

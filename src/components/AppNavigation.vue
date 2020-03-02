@@ -151,7 +151,7 @@ export default {
         {
           name: '修理について',
           icon: 'mdi-auto-fix',
-          link:'/care/repair'}
+          link:'/repair'}
       ],
       care_supports:[
         {
@@ -162,7 +162,7 @@ export default {
         {
           name: '修理について',
           icon: 'mdi-hammer',
-          link:'/care/repair'}
+          link:'/repair'}
       ],
       contact_supports:[
         {
@@ -215,7 +215,7 @@ export default {
             {
               name: '修理について',
               icon: 'mdi-hammer',
-              link:'/care/repair'
+              link:'/repair'
             }
           ]
         },

@@ -45,14 +45,7 @@
             <v-divider></v-divider>
           </div>
 
-          <div class="text-left">
-            <h2 class="headline my-8">お問い合わせ</h2>
-            <span class="subheading">
-              <!-- <v-text text to="/contsct">a</v-text> -->
-              <a class=" grey--text text--darken-2" href="/contact">お問い合わせ</a><br>
-              <br><br>
-            </span>
-          </div>
+          <contact-link></contact-link>
 
         </v-flex>
       </v-layout>
@@ -61,10 +54,12 @@
 </template>
 
 <script>
+import ContactLink from '@/components/ContactLink';
 
 export default {
   name: 'payment-shipping',
   components: {
+    ContactLink
   }
 };
 </script>

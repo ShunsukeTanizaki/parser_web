@@ -7,14 +7,12 @@
         class="my-4"
         align-center
       >
-        <v-flex xs12 sm4 class="my-6">
+        <v-flex xs12 sm4 class="my-8">
           <div class="text-center">
-            <h2 class="headline mb-6"></h2>
-            <span class="subheading grey--text text--darken-3 mb-3">
-            「グラウンドで気持ちよくプレーできる相棒」をコンセプトに<br>
-            <br>
-            職人の手仕事にこだわったモノづくりを目指しております。
-            </span>
+            <h2 class="brack--text display-2 text-center"><em>Works</em></h2>
+            <!-- <span class="subheading grey--text text--darken-3 mb-3">
+            「グラウンドで気持ちよくプレーできる相棒」をコンセプトに
+            </!-->
           </div>
         </v-flex>
       </v-layout>
