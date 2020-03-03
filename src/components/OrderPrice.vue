@@ -7,10 +7,10 @@
         <v-simple-table height="100%">
           <template>
             <thead>
-              <tr>
+              <tr class="grey darken-3">
                 <th></th>
-                <th class="title">硬式用</th>
-                <th class="title">軟式用</th>
+                <th class="title white--text">硬式用</th>
+                <th class="title white--text">軟式用</th>
               </tr>
             </thead>
             <tbody>
@@ -24,13 +24,18 @@
                 <td>52,000-</td>
                 <td>37,000-</td>
               </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
               <tr class="grey darken-3">
                 <td class="title white--text">オプション</td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
-                <td class="subtitle-1">刺繍</td>
+                <td class="subtitle-1" link="/price">刺繍</td>
                 <td>一ヵ所</td>
                 <td>1,000〜</td>
               </tr>
@@ -55,7 +60,7 @@
         
       </v-layout>
       <v-divider></v-divider>
-
+      
       <v-layout
         column
         wrap
@@ -63,8 +68,14 @@
       >
         <v-flex xs12 class="m-4">
           <div class="text-left">
-            <span class="subheading">
+              <span class="subheading grey--text text--darken-3">
+                ※現在オンラインでのご注文は受け付けておりません。<br>
+                ビスポークのアポイントについては、
+                <a class=" grey--text text--darken-2" href="/returns-exchanges">こちら</a><br class="hidden-sm-and-up">
+                にお問い合わせください。<br>
+              <br>
             </span>
+
           </div>
         </v-flex> 
 
@@ -105,7 +116,7 @@ export default {
 </script>
 
 <style scoped>
-th, tr, td {
-  padding: 10px 20px 10px 20px ;
+td{
+  padding: 10px 10px 10px 20px;
 }
 </style>

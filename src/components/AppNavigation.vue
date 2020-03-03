@@ -22,7 +22,7 @@
             :append-icon="nav_list.lists ? undefined : ''"
             color="brack"
           >
-            <template v-slot:activator :to="nav_list.link">
+            <template v-slot:activator>
               <v-list-item-content>
                 <v-list-item-title>{{ nav_list.name }}</v-list-item-title>
               </v-list-item-content>
@@ -248,7 +248,8 @@ export default {
         }
       ]
     }
-  }
+  },
+
 }
 </script>
 
