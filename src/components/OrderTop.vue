@@ -33,7 +33,7 @@
             <p>①お問い合わせ→②お電話、Skypeまたは対面での打ち合わせ→③採寸→④お支払い→⑤製作→⑥完成→⑦発送→⑧到着</p>
             <span class="subheading grey--text text--darken-3">
               
-              <a class=" grey--text text--darken-2" href="/contact">ご注意事項</a><br>
+              <a class=" grey--text text--darken-2" href="/returns-exchanges">ご注意事項</a><br>
               <br>
             </span>
             <v-divider></v-divider>
