@@ -1,42 +1,66 @@
 <template>
   <v-app>
-    <v-navigation-drawer app v-model="drawer" clipped v-if="$vuetify.breakpoint.smAndDown">
+    <v-navigation-drawer
+      app
+      clipped
+      v-model="drawer"
+      v-if="$vuetify.breakpoint.smAndDown"
+    >
       <v-container>
         <v-list-item>
           <v-list-item-content>
-            <v-list-item-title class="grey--text text--darken-2" @click="drawer=!drawer"><!--class=”title”で文字の大きさと太さ変更 文字の色を濃いグレーに変更-->
+            <v-list-item-title
+              class="grey--text text--darken-2"
+              @click="drawer=!drawer"
+            >
               <v-icon>mdi-close</v-icon>Close
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-divider></v-divider><!--仕切り-->
+        <v-divider></v-divider>
         <v-list nav dense><!--dense=文字を小さく、高さを低く nav=v-list-itemの幅を減らし、角を丸くする-->
-            <!--no-action=下の階層の左側のpadding-->
-            <!--:append-icon=”nav_list.lists ? undefined:””=下の階層がないメニューに矢印が表示されなくなる。nav_listにlistsが存在するかどうかで判別しなければ””、あればundefinedの設定を行う。-->
-          <v-list-group 
-            v-for="nav_list in nav_lists"
-            :key="nav_list.name"
-            :prepend-icon="nav_list.icon"
-            :to="nav_list.link"
-            no-action
-            :append-icon="nav_list.lists ? undefined : ''"
-            color="brack"
-          >
-            <template v-slot:activator>
+          <template v-for="nav_list in nav_lists">
+            <v-list-item
+              v-if="!nav_list.lists"
+              :to="nav_list.link"
+              :key="nav_list.name"
+              @click="menu_close"
+            >
+              <v-list-item-icon>
+                <v-icon>{{ nav_list.icon }}</v-icon>
+              </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title>{{ nav_list.name }}</v-list-item-title>
-              </v-list-item-content>
-            </template>
-            
-            <v-list-item 
-              v-for="list in nav_list.lists" 
-              :key="list.name" 
-              :to="list.link">
-              <v-list-item-content>
-                <v-list-item-title>{{ list.name }}</v-list-item-title>
+                <v-list-item-title>
+                  {{ nav_list.name }}
+                </v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-          </v-list-group>
+            <!--no-action=下の階層の左側のpadding-->
+            <v-list-group
+              v-else
+              no-action
+              :prepend-icon="nav_list.icon"
+              :key="nav_list.name"
+              v-model="nav_list.active"
+            >
+              <template v-slot:activator>
+                <v-list-item-content>
+                  <v-list-item-title>
+                    {{ nav_list.name }}
+                  </v-list-item-title>
+                </v-list-item-content>
+              </template>
+              <v-list-item
+                v-for="list in nav_list.lists"
+                :key="list.name"
+                :to="list.link"
+              >
+                <v-list-item-title>
+                  {{ list.name }}
+                </v-list-item-title>
+              </v-list-item>
+            </v-list-group>
+          </template>
         </v-list>
       </v-container>
     </v-navigation-drawer>
@@ -56,7 +80,7 @@
       <v-btn text to="/about" class="hidden-sm-and-down">About</v-btn>
 
       <!-- ### オーダー ボタン ### -->
-      <v-btn text to="/order" class="hidden-sm-and-down">オーダー</v-btn>
+      <v-btn text to="/order" class="hidden-sm-and-down">Bespoke</v-btn>
 
       <!-- <v-menu open-on-hover offset-y>
         <template v-slot:activator="{on}">
@@ -76,7 +100,7 @@
       </v-menu> -->
 
       <!-- ### コレクション ボタン ### -->
-      <v-btn text to="/collection" class="hidden-sm-and-down">コレクション</v-btn>
+      <v-btn text to="/collection" class="hidden-sm-and-down">Collection</v-btn>
       <!-- <v-menu open-on-hover offset-y>
         <template v-slot:activator="{on}">
         <v-btn v-on="on" text to="/collection" class="hidden-sm-and-down">コレクション<v-icon>mdi-menu-down</v-icon></v-btn>
@@ -96,7 +120,7 @@
 
       <v-menu open-on-hover offset-y>
         <template v-slot:activator="{on}">
-        <v-btn v-on="on" text to="/care" class="hidden-sm-and-down">お手入れ方法<v-icon>mdi-menu-down</v-icon></v-btn>
+        <v-btn v-on="on" text to="/care" class="hidden-sm-and-down">Care<v-icon>mdi-menu-down</v-icon></v-btn>
         </template>
         <v-list>
           <v-subheader>How to Care</v-subheader>
@@ -113,7 +137,7 @@
 
       <v-menu open-on-hover offset-y>
         <template v-slot:activator="{on}">
-        <v-btn v-on="on" text to="/contact" class="hidden-sm-and-down">お問合わせ<v-icon>mdi-menu-down</v-icon></v-btn>
+        <v-btn v-on="on" text to="/contact" class="hidden-sm-and-down">Contact<v-icon>mdi-menu-down</v-icon></v-btn>
         </template>
         <v-list>
           <v-subheader>Contact as</v-subheader>
@@ -136,12 +160,17 @@
 
 <script>
 export default {
+    methods:{
+      menu_close(){
+        this.nav_lists.forEach(nav_list => nav_list.active = false)
+    }
+  },
   data(){
     return{
       // appTitle: 'PARSER',
       appTitle: '',
       drawer: false,
-      // ヘッダーナビ
+      // Header_nav
       supports:[
         {
           name: 'お手入れ方法',
@@ -153,6 +182,7 @@ export default {
           icon: 'mdi-auto-fix',
           link:'/repair'}
       ],
+      // care-btn
       care_supports:[
         {
           name: 'お手入れの方法',
@@ -164,6 +194,7 @@ export default {
           icon: 'mdi-hammer',
           link:'/repair'}
       ],
+      // contact-btn
       contact_supports:[
         {
           name: 'お支払い・送料について',
@@ -181,7 +212,7 @@ export default {
           link:'/contact'
         },
       ],
-      // ハンバーガーメニュー
+      // nav_drower
       nav_lists:[
         {
           name: 'HOME',
@@ -194,18 +225,20 @@ export default {
           link: '/about'
         },
         {
-          name: 'Order',
+          name: 'Bespoke',
           icon: 'mdi-offer',
           link: '/order'
         },
         {
-          name: 'コレクション',
+          name: 'Collection',
           icon: 'mdi-image-multiple',
           link: '/collection'
         },
         {
-        name: 'お手入れ',
+        name: 'Care',
         icon: 'mdi-auto-fix',
+        active: false,
+        link: '',
         lists: [
             {
               name: 'お手入れ方法',
@@ -220,8 +253,10 @@ export default {
           ]
         },
         {
-          name: 'お問合わせ',
+          name: 'Contact',
           icon: 'mdi-email',
+          active: false,
+          link: '',
           lists:[
             
             {
@@ -248,8 +283,7 @@ export default {
         }
       ]
     }
-  },
-
+  }
 }
 </script>
 
