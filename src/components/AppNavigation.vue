@@ -69,7 +69,7 @@
       <v-app-bar-nav-icon @click="drawer=!drawer" class="hidden-md-and-up"></v-app-bar-nav-icon>
       <!-- <v-toolbar-title to="/" v-if="$vuetify.breakpoint.mdOnly">Vuetify</v-toolbar-title> --><!--mdのときだけ表示-->
       <v-spacer></v-spacer>
-      <v-toolbar-title class="px-4">
+      <v-toolbar-title class="pr-6">
         <router-link to="/">
           {{ appTitle }}
         </router-link>

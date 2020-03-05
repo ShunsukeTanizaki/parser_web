@@ -11,6 +11,7 @@
           <section v-bind:style="{height:fullheight}">
             <h2 class="font-italic white--text pt-12">Coming soon...</h2>
           </section>
+          <div xs-onry style="height: 80px;"></div>
         </div>
       </v-flex>
     </v-layout>

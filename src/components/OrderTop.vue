@@ -12,7 +12,7 @@
             <h2 class="brack--text mb-12 display-2 text-center"><em>Bespoke</em></h2>
               <span class="subheading grey--text text--darken-3">
                 ビスポークのグラブを作る上で一番大切なこと、それはお客様との信頼関係です。<br>
-                お客様の理想の1足をお作りするために、製作のすべての過程でご要望をお伺いいたします。<br>
+                お客様の理想の形をお作りするために、製作のすべての過程でご要望をお伺いいたします。<br>
                 <br>
               </span>
               <!-- <span class="subheading grey--text text--darken-3">

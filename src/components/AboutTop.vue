@@ -10,7 +10,7 @@
         <h2 class="white--text mb-6 display-2 text-center"><em>About</em></h2>
           <!-- <em>Philosophy</em> -->
         <div class="subheading mb-4 text-center">
-          <em>Philosophy of manufacturing</em>
+          <!-- <em>Philosophy of manufacturing</em> -->
         </div>
       </v-layout>
     </v-parallax>

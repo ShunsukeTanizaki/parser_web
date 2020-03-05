@@ -10,7 +10,9 @@
         <!-- <h1 class="white--text mb-2 display-1 text-center">タイトル</h1> -->
         <!-- <v-divider></v-divider> -->
         <div class="headline mb-4 text-center">
-          <em>Welcome to the world of custom-made gloves & mitts</em>
+          <em style="text-shadow: 0 0 0.3em rgba(0,0,0,1);">
+            Welcome to the world of custom-made gloves & mitts
+          </em>
         </div>
       </v-layout>
     </v-parallax>
