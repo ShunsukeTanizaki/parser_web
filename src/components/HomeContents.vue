@@ -30,7 +30,7 @@
                 <div class="headline mb-4">Gloves</div>
               </v-card-title>
               <p><em>たくましく、しなやかに<br>
-                  一人ひとりの手に合わせてグラブに関節をつくることを<br>
+                  一人ひとりの手に合わせてグラブに関節をつけることを<br>
                   心がけています</em></p>
               <v-btn
                 class="mt-12"
@@ -50,7 +50,7 @@
               <v-layout column align-center justify-center class="hidden-md-and-up pa-4">
                 <div class="headline white--text mb-4 text-center">Gloves</div>
                 <p><em>たくましく、しなやかに<br>
-                  一人ひとりの手に合わせてグラブに関節をつくることを
+                  一人ひとりの手に合わせてグラブに関節をつけることを
                   心がけています</em></p>
                 <v-btn
                   class="mt-12"

@@ -25,9 +25,6 @@ export default {
 .v-application--wrap {
 min-height: 0px;
 }
-.pcshow {
-  display: none;
-}
 h2, em {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }

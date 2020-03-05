@@ -1,6 +1,6 @@
 <template>
   <section>
-    <v-parallax src="../assets/img08.jpg" height="650">
+    <v-parallax dark src="../assets/img08.jpg" height="650">
       <v-layout
         column
         align-center

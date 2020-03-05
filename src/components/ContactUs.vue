@@ -7,11 +7,11 @@
       align-center
     >
       <v-flex xs12 sm4>
-        <div v-cloak>
-          <section v-bind:style="{height:fullheight}" style="">
+        <div v-cloak >
+          <section v-bind:style="{height:fullheight}" style="padding-top: 100px;" >
             <h2 class="headline mb-10">お問合わせはメールにて<br class="hidden-sm-and-up">
             ご連絡ください</h2>
-          <span class="subheading mb-10">
+          <span class="subheading mb-12">
             <a href="mailto:info@parser.jp"><v-icon>mdi-email</v-icon>  info@parser.jp</a>
             <span class="pl-4">担当：谷﨑</span><br>
             <br>
