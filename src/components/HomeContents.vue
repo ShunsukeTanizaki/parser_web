@@ -2,7 +2,7 @@
   <section>
     <!-- 作業風景02 -->
     <v-flex xs12 md12>
-      <v-parallax src="../assets/img01.jpg" height="430">
+      <v-parallax src="../assets/img01.jpg" height="380">
         <v-layout column wrap align-center justify-center>
           <div class="headline white--text mb-4 text-center">Philosophy of manufacturing</div>
           <em class="white--text">Pursue a world that can only be done by hand made.</em>
@@ -120,7 +120,7 @@
 
     <!-- 作業風景02 -->
     <v-flex xs12 md12 style="padding:0;">
-      <v-parallax src="../assets/img03.jpg" height="430">
+      <v-parallax src="../assets/img03.jpg" height="380">
         <v-layout column align-center justify-center>
           <div class="headline white--text mb-4 text-center">Try to make a grab on Bespoke</div>
           <em class="white--text">We will deliver a companion of the ground</em>
