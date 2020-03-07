@@ -80,7 +80,7 @@
       <v-btn text to="/about" class="hidden-sm-and-down">About</v-btn>
 
       <!-- ### オーダー ボタン ### -->
-      <v-btn text to="/order" class="hidden-sm-and-down">Bespoke</v-btn>
+      <v-btn text to="/bespoke" class="hidden-sm-and-down">Bespoke</v-btn>
       <!-- ### コレクション ボタン ### -->
       <v-btn text to="/collection" class="hidden-sm-and-down">Collection</v-btn>
       <v-menu open-on-hover offset-y>
@@ -191,7 +191,7 @@ export default {
         {
           name: 'Bespoke',
           icon: 'mdi-offer',
-          link: '/order'
+          link: '/bespoke'
         },
         {
           name: 'Collection',

@@ -86,7 +86,7 @@
 
 <script>
 export default {
-  name: "OrderPrice",
+  name: "BespokePrice",
   data () {
     return {
       price: [

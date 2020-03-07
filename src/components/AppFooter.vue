@@ -47,8 +47,8 @@ export default {
         link:'/about'
       },
       {
-        name: 'Order',
-        link:'/order'
+        name: 'Bespoke',
+        link:'/bespoke'
       },
       {
         name: 'Collection',

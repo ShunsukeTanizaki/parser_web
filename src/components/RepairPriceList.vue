@@ -7,7 +7,7 @@
           <template v-slot:default>
             <thead>
               <tr>
-                <th class="text-left headline">修理価格表</th>
+                <th class="text-left headline">修理価格(税抜)</th>
                 <th></th>
               </tr>
             </thead>

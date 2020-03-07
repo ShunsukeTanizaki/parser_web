@@ -19,9 +19,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/order',
-    name: 'Order',
-    component: () => import('../views/Order.vue')
+    path: '/bespoke',
+    name: 'Bespoke',
+    component: () => import('../views/Bespoke.vue')
   },
   {
     path: '/collection',
