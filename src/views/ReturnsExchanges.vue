@@ -12,7 +12,7 @@
         </v-flex>
         <v-flex xs12 class="my-4">
           <div class="text-left ">
-            <h2 class="headline my-6">ご注意</h2>
+            <h2 class="headline my-8">ご注意</h2>
             <span class="subheading grey--text text--darken-3">
               一度ご決定をいただいたデザインの変更は、出来る限りご遠慮願います。<br>
               <br>

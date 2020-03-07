@@ -31,7 +31,9 @@
           <div class="text-left">
             <h2 class="headline my-8">配送料</h2>
             <span class="subheading grey--text text--darken-3">
-              送料全国無料<br>
+              10,000 円（税込）以上：送料全国無料<br>
+              <br>
+              その他：お客様負担<br>
               <br>
               代金引換手数料：330 円（税込）<br>
               <br>

@@ -17,7 +17,7 @@
             <br>
           </span>
           <span>※通常3営業日以内に<br class="hidden-sm-and-up">
-          回答メールを送らせて頂いております
+          回答メールを送らせて頂いております。
           </span>
           </section>
         </div>
