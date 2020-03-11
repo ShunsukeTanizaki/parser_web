@@ -16,13 +16,13 @@
             <tbody>
               <tr>
                 <td class="subtitle-1">グラブ</td>
-                <td>50,000-</td>
-                <td>35,000-</td>
+                <td>55,000-</td>
+                <td>40,000-</td>
               </tr>
               <tr>
                 <td class="subtitle-1">ミット</td>
-                <td>52,000-</td>
-                <td>37,000-</td>
+                <td>58,000-</td>
+                <td>43,000-</td>
               </tr>
               <tr>
                 <td></td>
@@ -45,9 +45,9 @@
                 <td>別途お見積もり</td>
               </tr>
               <tr>
-                <td class="subtitle-1">複数カラー</td>
-                <td>3色以上</td>
-                <td>1,500〜</td>
+                <td class="subtitle-1">本体3色以上</td>
+                <td>1色増えるごと</td>
+                <td>＋2,000</td>
               </tr>
               <tr>
                 <td></td>
@@ -92,19 +92,19 @@ export default {
       price: [
         {
           name: 'グラブ',
-          price1: '￥50,000-（税抜）',
-          price2: '￥30,000-（税抜）'
+          price1: '￥55,000-（税抜）',
+          price2: '￥35,000-（税抜）'
         },
         {
           name: 'ミット',
-          price1: '￥52,000-（税抜）',
-          price2: '￥32,000-（税抜）'
+          price1: '￥58,000-（税抜）',
+          price2: '￥38,000-（税抜）'
         },
         {
           name: 'オプション',
           options: [
-            {name: '刺繍', price: '一箇所　1,000-'},
-            {name: '', price: '1,000-'},
+            {name: '刺繍', price: '一箇所　1,000〜'},
+            {name: 'ロゴ刺繍', price: '別途お見積もり'},
             {name: '', price: '1,000-'},
             {name: '', price: '1,000-'},
           ],
