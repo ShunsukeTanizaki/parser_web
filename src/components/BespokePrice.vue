@@ -16,12 +16,12 @@
             <tbody>
               <tr>
                 <td class="subtitle-1">グラブ</td>
-                <td>55,000-</td>
+                <td>60,000-</td>
                 <td>40,000-</td>
               </tr>
               <tr>
                 <td class="subtitle-1">ミット</td>
-                <td>58,000-</td>
+                <td>63,000-</td>
                 <td>43,000-</td>
               </tr>
               <tr>
